@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miados e Latidos | Pet Shop em Belo Horizonte — Cirurgia, Ração, Banho e Tosa</title>
+<meta name="description" content="Miados e Latidos: pet shop completo em Belo Horizonte com cirurgia, ração, utilidades, banho e tosa. Rua Cyrene Crivellari Bellônia, 50 - São João Batista.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 48 48%22><circle cx=%2224%22 cy=%2224%22 r=%2224%22 fill=%22%236853C2%22/><path d=%22M8 20L24 7L40 20%22 fill=%22none%22 stroke=%22%233EAF8E%22 stroke-width=%223%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/><polygon points=%2212,24 16,18 18,25%22 fill=%22%23fff%22/><circle cx=%2217%22 cy=%2230%22 r=%227%22 fill=%22%23fff%22/><ellipse cx=%2234%22 cy=%2226%22 rx=%225%22 ry=%227%22 transform=%22rotate(-20 34 26)%22 fill=%22%23fff%22/><circle cx=%2231%22 cy=%2230%22 r=%228%22 fill=%22%23fff%22/><path d=%22M24 27c-1.6-2-4.6-1.6-4.9 1-.3 2.4 2.4 4.6 4.9 6.4 2.5-1.8 5.2-4 4.9-6.4-.3-2.6-3.3-3-4.9-1z%22 fill=%22%23E1516F%22/></svg>">
+<style>
+  :root{
+    --purple-900:#241A3D;
+    --purple-700:#3D2C6B;
+    --purple-600:#6853C2;
+    --purple-500:#8670D6;
+    --purple-200:#E2DAF7;
+    --cream:#F6F1E7;
+    --cream-deep:#EFE6D4;
+    --gold:#E8A33D;
+    --gold-deep:#C97F1F;
+    --ink:#2B2438;
+    --white:#FFFDF9;
+    --whatsapp:#25D366;
+    --radius-lg: 32px;
+    --radius-md: 20px;
+    --radius-sm: 12px;
+    --shadow-soft: 0 20px 40px -20px rgba(36,26,61,0.35);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Nunito', sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+
+  h1,h2,h3,.display{
+    font-family:'Baloo 2', sans-serif;
+    color:var(--purple-900);
+    line-height:1.1;
+    font-weight:700;
+  }
+
+  .eyebrow{
+    font-family:'Nunito', sans-serif;
+    font-weight:800;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    font-size:.78rem;
+    color:var(--gold-deep);
+    display:inline-flex;
+    align-items:center;
+    gap:.5em;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px; height:2px;
+    background:var(--gold-deep);
+    display:inline-block;
+  }
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 clamp(20px, 5vw, 48px);
+  }
+
+  section{ position:relative; }
+
+  /* ---------- Reduced motion ---------- */
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
+
+  /* ---------- Focus states ---------- */
+  a:focus-visible, button:focus-visible{
+    outline:3px solid var(--gold);
+    outline-offset:3px;
+    border-radius:6px;
+  }
+
+  /* ================= NAV ================= */
+  header.site-nav{
+    position:sticky; top:0; z-index:100;
+    background:rgba(246,241,231,0.9);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid rgba(36,26,61,0.08);
+  }
+  .nav-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px clamp(20px,5vw,48px);
+    max-width:1180px; margin:0 auto;
+  }
+  .brand{
+    display:flex; align-items:center; gap:.7rem;
+    font-family:'Baloo 2', sans-serif;
+    font-weight:800;
+    color:var(--purple-600);
+  }
+  .brand .paw-badge{
+    width:52px; height:52px;
+    background:var(--purple-600);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+    box-shadow:0 6px 16px -6px rgba(104,83,194,.6);
+  }
+  .brand .paw-badge svg{ width:26px; height:26px; color:var(--white); }
+  .brand-text{
+    font-size:1.5rem;
+    line-height:1;
+    color:var(--purple-600);
+    letter-spacing:-.01em;
+  }
+  @media (max-width:520px){ .brand-text{ font-size:1.15rem; } }
+
+  nav.links{
+    display:flex; gap:1.9rem;
+    font-weight:700;
+    font-size:.95rem;
+  }
+  nav.links a{
+    position:relative;
+    padding:4px 0;
+    color:var(--purple-900);
+  }
+  nav.links a::after{
+    content:"";
+    position:absolute; left:0; bottom:-2px;
+    width:0%; height:3px;
+    background:var(--gold);
+    border-radius:2px;
+    transition:width .25s ease;
+  }
+  nav.links a:hover::after{ width:100%; }
+
+  .nav-cta{
+    background:var(--whatsapp);
+    color:white;
+    font-weight:800;
+    padding:.65rem 1.3rem;
+    border-radius:999px;
+    display:flex; align-items:center; gap:.5rem;
+    box-shadow:0 8px 18px -6px rgba(37,211,102,.55);
+    transition:transform .2s ease;
+  }
+  .nav-cta:hover{ transform:translateY(-2px); }
+  .nav-cta svg{width:18px; height:18px; fill:white;}
+
+  .burger{ display:none; }
+
+  @media (max-width: 860px){
+    nav.links{ display:none; }
+    .burger{
+      display:flex; width:42px; height:42px;
+      border-radius:50%; background:var(--purple-200);
+      align-items:center; justify-content:center;
+      border:none; cursor:pointer;
+    }
+    .burger svg{width:20px;height:20px;}
+    .nav-cta span.long{ display:none; }
+  }
+
+  /* ================= HERO ================= */
+  .hero{
+    padding:64px 0 40px;
+    position:relative;
+  }
+  .hero-brand-lockup{
+    display:flex; align-items:center; gap:.85rem;
+    margin-bottom:22px;
+  }
+  .hero-brand-lockup .badge-icon{
+    width:64px; height:64px;
+    border-radius:50%;
+    background:var(--purple-600);
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+    box-shadow:0 10px 22px -8px rgba(104,83,194,.55);
+  }
+  .hero-brand-lockup .badge-icon svg{ width:32px; height:32px; color:var(--white); }
+  .hero-brand-lockup span{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:800;
+    font-size:clamp(1.7rem, 3vw, 2.3rem);
+    color:var(--purple-600);
+    letter-spacing:-.01em;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns: 1.05fr .95fr;
+    gap:clamp(20px, 5vw, 60px);
+    align-items:center;
+  }
+  .hero h1{
+    font-size:clamp(2.6rem, 5.4vw, 4.3rem);
+    margin:14px 0 20px;
+  }
+  .hero h1 .hl{
+    color:var(--purple-600);
+    position:relative;
+    white-space:nowrap;
+  }
+  .hero p.lead{
+    font-size:1.15rem;
+    color:#4a4359;
+    max-width:46ch;
+    margin-bottom:28px;
+  }
+  .hero-ctas{ display:flex; gap:14px; flex-wrap:wrap; }
+  .hero-tagline{
+    margin-top:20px;
+    font-family:'Baloo 2';
+    font-weight:600;
+    font-style:italic;
+    font-size:.98rem;
+    color:var(--purple-700);
+  }
+
+  .btn{
+    display:inline-flex; align-items:center; gap:.55rem;
+    font-weight:800;
+    padding:1rem 1.7rem;
+    border-radius:999px;
+    font-size:1rem;
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .btn svg{ width:19px; height:19px; }
+  .btn-primary{
+    background:var(--whatsapp); color:white;
+    box-shadow:0 12px 24px -10px rgba(37,211,102,.6);
+  }
+  .btn-primary svg{ fill:white; }
+  .btn-primary:hover{ transform:translateY(-3px); box-shadow:0 16px 30px -10px rgba(37,211,102,.7); }
+  .btn-ghost{
+    background:transparent;
+    color:var(--purple-900);
+    border:2.5px solid var(--purple-900);
+  }
+  .btn-ghost:hover{ background:var(--purple-900); color:white; }
+
+  .hero-art{
+    position:relative;
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    box-shadow:var(--shadow-soft);
+    aspect-ratio: 4/5;
+    background: radial-gradient(circle at 30% 20%, var(--purple-500), var(--purple-600) 55%, var(--purple-900) 130%);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .hero-art .critter-scatter{
+    position:absolute; inset:0;
+  }
+  .hero-art .critter-scatter svg{
+    position:absolute;
+    aspect-ratio:1;
+    height:auto;
+    color:rgba(255,255,255,.16);
+  }
+  .hero-art .critter-main{
+    position:relative; z-index:2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:22px;
+    padding:0 14%;
+  }
+  .critter-tile{
+    background:var(--white);
+    border-radius:24px;
+    aspect-ratio:1;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:.4rem;
+    box-shadow:0 16px 30px -14px rgba(0,0,0,.4);
+    transform:rotate(var(--tilt, 0deg));
+  }
+  .critter-tile:nth-child(1){ --tilt:-4deg; }
+  .critter-tile:nth-child(2){ --tilt:3deg; margin-top:-14px; }
+  .critter-tile:nth-child(3){ --tilt:3deg; margin-bottom:-14px; }
+  .critter-tile:nth-child(4){ --tilt:-4deg; }
+  .critter-tile svg{ width:38%; height:38%; }
+  .critter-tile span{
+    font-family:'Baloo 2'; font-weight:700; font-size:.78rem; color:var(--purple-900);
+  }
+  .critter-tile.t-dog svg{ color:#B8622B; }
+  .critter-tile.t-cat svg{ color:var(--purple-600); }
+  .critter-tile.t-bird svg{ color:#5C8A3A; }
+  .critter-tile.t-rabbit svg{ color:#C24B78; }
+
+  .hero-art .tag-float{
+    position:absolute; left:18px; bottom:18px;
+    background:var(--white);
+    padding:.8rem 1.1rem;
+    border-radius:var(--radius-sm);
+    box-shadow:0 14px 26px -12px rgba(0,0,0,.35);
+    display:flex; align-items:center; gap:.7rem;
+    font-family:'Baloo 2';
+    font-weight:700;
+    color:var(--purple-900);
+    max-width:78%;
+    z-index:3;
+  }
+  .tag-float .dot{
+    width:10px;height:10px;border-radius:50%;
+    background:var(--gold); flex-shrink:0;
+  }
+
+  .trust-strip{
+    display:flex; gap:clamp(18px,4vw,44px); flex-wrap:wrap;
+    margin-top:44px;
+    padding-top:26px;
+    border-top:1.5px dashed rgba(36,26,61,.22);
+  }
+  .trust-item{
+    display:flex; align-items:center; gap:.6rem;
+    font-weight:700; font-size:.92rem; color:var(--purple-700);
+  }
+  .trust-item svg{ width:22px; height:22px; fill:var(--gold-deep); flex-shrink:0; }
+
+  /* ============ PAW TRAIL (signature element) ============ */
+  .paw-trail{
+    position:absolute;
+    pointer-events:none;
+    z-index:1;
+  }
+  .paw-trail svg{ width:100%; height:auto; opacity:.9; }
+
+  /* ================= SECTION HEADERS ================= */
+  .section-head{
+    max-width:640px;
+    margin-bottom:44px;
+  }
+  .section-head h2{
+    font-size:clamp(2rem, 3.6vw, 2.7rem);
+    margin-top:10px;
+  }
+  .section-head p{ color:#4a4359; margin-top:12px; font-size:1.05rem; }
+  .center{ text-align:center; margin-left:auto; margin-right:auto; }
+
+  /* ================= SOBRE ================= */
+  .sobre{ padding:90px 0 40px; position:relative; }
+  .sobre-grid{
+    display:grid;
+    grid-template-columns: .85fr 1.15fr;
+    gap:clamp(24px,5vw,64px);
+    align-items:center;
+  }
+  .sobre-species{
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    box-shadow:var(--shadow-soft);
+    background:var(--purple-600);
+    padding:2rem;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1rem;
+  }
+  .species-tile{
+    background:rgba(255,255,255,.94);
+    border-radius:18px;
+    padding:1.4rem 1rem;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:.6rem;
+    text-align:center;
+  }
+  .species-tile svg{ width:40px; height:40px; }
+  .species-tile span{ font-family:'Baloo 2'; font-weight:700; color:var(--purple-900); font-size:.95rem; }
+  .species-tile.sp-dog svg{ color:#B8622B; }
+  .species-tile.sp-cat svg{ color:var(--purple-600); }
+  .species-tile.sp-bird svg{ color:#5C8A3A; }
+  .species-tile.sp-rabbit svg{ color:#C24B78; }
+  .sobre-text p{ color:#4a4359; margin-bottom:16px; font-size:1.05rem; }
+  .sobre-stats{
+    display:grid; grid-template-columns:repeat(3,1fr);
+    gap:16px; margin-top:28px;
+  }
+  .stat{
+    background:var(--white);
+    border-radius:var(--radius-md);
+    padding:1.2rem 1rem;
+    text-align:center;
+    box-shadow:0 10px 24px -16px rgba(36,26,61,.3);
+  }
+  .stat strong{
+    display:block;
+    font-family:'Baloo 2';
+    font-size:1.7rem;
+    color:var(--purple-600);
+  }
+  .stat span{ font-size:.82rem; font-weight:700; color:#5a5268; }
+
+  /* ================= SERVIÇOS ================= */
+  .servicos{ padding:100px 0 60px; background:var(--purple-900); position:relative; overflow:hidden; }
+  .servicos::before{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      radial-gradient(circle at 15% 20%, rgba(232,163,61,.14), transparent 45%),
+      radial-gradient(circle at 85% 80%, rgba(134,112,214,.22), transparent 45%);
+    pointer-events:none;
+  }
+  .servicos .section-head h2, .servicos .section-head p{ color:var(--cream); }
+  .servicos .section-head p{ color:#cfc6e6; }
+  .servicos .eyebrow{ color:var(--gold); }
+  .servicos .eyebrow::before{ background:var(--gold); }
+
+  .servicos-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+    position:relative; z-index:2;
+  }
+  .service-card{
+    background:var(--white);
+    border-radius:var(--radius-md);
+    padding:2rem 1.6rem;
+    box-shadow:0 20px 40px -18px rgba(0,0,0,.4);
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .service-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 28px 50px -16px rgba(0,0,0,.5);
+  }
+  .service-icon{
+    width:58px; height:58px;
+    border-radius:16px;
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:1.2rem;
+  }
+  .service-icon svg{ width:28px; height:28px; }
+  .service-card h3{ font-size:1.28rem; margin-bottom:.6rem; }
+  .service-card p{ font-size:.94rem; color:#5a5268; }
+
+  .service-card.c1 .service-icon{ background:#F2E4D4; }
+  .service-card.c1 .service-icon svg{ fill:#B8622B; }
+  .service-card.c2 .service-icon{ background:#E4EFD7; }
+  .service-card.c2 .service-icon svg{ fill:#5C8A3A; }
+  .service-card.c3 .service-icon{ background:var(--purple-200); }
+  .service-card.c3 .service-icon svg{ fill:var(--purple-600); }
+  .service-card.c4 .service-icon{ background:#FCE7EE; }
+  .service-card.c4 .service-icon svg{ fill:#C24B78; }
+
+  @media (max-width: 980px){
+    .servicos-grid{ grid-template-columns:repeat(2,1fr); }
+  }
+  @media (max-width: 560px){
+    .servicos-grid{ grid-template-columns:1fr; }
+  }
+
+  /* ================= NOSSA LOJA ================= */
+  .loja{ padding:90px 0; }
+  .loja-gallery{
+    display:grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:18px;
+    height:560px;
+  }
+  .loja-photo{
+    margin:0;
+    border-radius:var(--radius-md);
+    overflow:hidden;
+    box-shadow:0 16px 30px -18px rgba(36,26,61,.4);
+  }
+  .loja-photo.big{ grid-row:1 / 3; }
+  .loja-photo img{
+    width:100%; height:100%; object-fit:cover;
+    display:block;
+    transition:transform .5s ease;
+  }
+  .loja-photo:hover img{ transform:scale(1.06); }
+  @media (max-width:760px){
+    .loja-gallery{
+      grid-template-columns:1fr; grid-template-rows:none;
+      height:auto;
+    }
+    .loja-photo.big{ grid-row:auto; aspect-ratio:4/3; }
+    .loja-photo{ aspect-ratio:4/3; }
+  }
+
+  /* ================= GALERIA DE CLIENTES ================= */
+  .clientes{ padding:20px 0 90px; }
+  .clientes-gallery{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+  }
+  .cliente-photo{
+    margin:0;
+    border-radius:var(--radius-md);
+    overflow:hidden;
+    aspect-ratio: 3/4;
+    box-shadow:0 16px 30px -18px rgba(36,26,61,.4);
+    position:relative;
+  }
+  .cliente-photo::after{
+    content:"";
+    position:absolute; inset:0;
+    box-shadow: inset 0 0 0 3px rgba(255,255,255,.7);
+    border-radius:var(--radius-md);
+    pointer-events:none;
+  }
+  .cliente-photo img{
+    width:100%; height:100%; object-fit:cover;
+    display:block;
+    transition:transform .4s ease;
+  }
+  .cliente-photo:hover img{ transform:scale(1.08); }
+  @media (max-width:760px){
+    .clientes-gallery{ grid-template-columns:repeat(2,1fr); }
+  }
+
+  /* ================= DIFERENCIAIS ================= */
+  .diferenciais{ padding:90px 0; }
+  .dif-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+  }
+  .dif-card{
+    display:flex; gap:1rem;
+    align-items:flex-start;
+  }
+  .dif-num{
+    color:var(--gold-deep);
+    background:var(--white);
+    width:46px; height:46px;
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+    box-shadow:0 10px 20px -12px rgba(36,26,61,.4);
+  }
+  .dif-num svg{ width:24px; height:24px; }
+  .dif-card h3{ font-size:1.12rem; margin-bottom:.35rem; }
+  .dif-card p{ font-size:.92rem; color:#5a5268; }
+  @media (max-width: 860px){ .dif-grid{ grid-template-columns:1fr; } }
+
+  /* ================= LOCALIZAÇÃO ================= */
+  .local{
+    padding:90px 0 100px;
+  }
+  .local-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:clamp(24px,5vw,50px);
+    align-items:stretch;
+  }
+  .local-card{
+    background:var(--white);
+    border-radius:var(--radius-lg);
+    padding:2.4rem;
+    box-shadow:var(--shadow-soft);
+    display:flex; flex-direction:column; justify-content:center;
+  }
+  .info-row{
+    display:flex; gap:1rem; align-items:flex-start;
+    margin-bottom:1.5rem;
+  }
+  .info-row:last-child{ margin-bottom:0; }
+  .info-row .ic{
+    width:44px; height:44px; border-radius:12px;
+    background:var(--purple-200);
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+  .info-row .ic svg{ width:22px; height:22px; fill:var(--purple-600); }
+  .info-row h4{ font-family:'Baloo 2'; font-size:1.05rem; color:var(--purple-900); margin-bottom:.2rem; }
+  .info-row p, .info-row a{ font-size:.95rem; color:#4a4359; }
+  .info-row a:hover{ color:var(--purple-600); text-decoration:underline; }
+
+  .hours-list{ margin-top:.3rem; }
+  .hours-list li{
+    display:flex; justify-content:space-between; gap:1rem;
+    padding:.42rem 0;
+    border-bottom:1px dashed rgba(36,26,61,.14);
+    font-size:.92rem;
+  }
+  .hours-list li:last-child{ border-bottom:none; }
+  .hours-list li span:first-child{ color:var(--purple-900); font-weight:700; }
+  .hours-list li span:last-child{ color:#4a4359; font-weight:700; }
+  .hours-list li.closed span:last-child{ color:#C2456B; }
+
+  .map-wrap{
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    box-shadow:var(--shadow-soft);
+    min-height:340px;
+  }
+  .map-wrap iframe{ width:100%; height:100%; border:0; min-height:340px; }
+
+  @media (max-width: 860px){ .local-grid{ grid-template-columns:1fr; } }
+
+  /* ================= CTA FAIXA ================= */
+  .cta-strip{
+    background:var(--gold);
+    padding:52px 0;
+  }
+  .cta-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    flex-wrap:wrap; gap:24px;
+  }
+  .cta-inner h2{ font-size:clamp(1.5rem,3vw,2.1rem); color:var(--purple-900); }
+  .cta-inner p{ color:#5a3f10; font-weight:700; margin-top:6px; }
+  .cta-strip .btn-primary{ background:var(--purple-900); box-shadow:0 12px 24px -10px rgba(36,26,61,.55); }
+  .cta-strip .btn-primary svg{ fill:var(--gold); }
+
+  /* ================= FOOTER ================= */
+  footer{
+    background:var(--purple-900);
+    color:var(--cream);
+    padding:64px 0 28px;
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap:40px;
+    padding-bottom:36px;
+    border-bottom:1px solid rgba(255,255,255,.14);
+  }
+  .footer-brand{ display:flex; align-items:center; gap:.7rem; margin-bottom:14px; }
+  .footer-brand .paw-badge{ width:52px; height:52px; background:var(--gold); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .footer-brand .paw-badge svg{ width:26px; height:26px; color:var(--purple-900); }
+  .footer-brand .brand-text{ color:var(--white); font-size:1.35rem; }
+  .footer-critters{ display:flex; gap:14px; margin-top:18px; }
+  .footer-critters svg{ width:26px; height:26px; color:var(--gold); opacity:.85; }
+  footer p{ color:#c9bfe0; font-size:.92rem; max-width:32ch; }
+  footer h5{ font-family:'Baloo 2'; color:var(--white); margin-bottom:1rem; font-size:1rem; }
+  footer ul li{ margin-bottom:.7rem; }
+  footer ul a{ color:#c9bfe0; font-size:.92rem; display:flex; align-items:center; gap:.5rem; }
+  footer ul a:hover{ color:var(--gold); }
+  footer ul a svg{ width:16px; height:16px; fill:currentColor; flex-shrink:0; }
+  .footer-bottom{
+    display:flex; justify-content:space-between; align-items:center;
+    flex-wrap:wrap; gap:10px;
+    padding-top:24px;
+    font-size:.82rem; color:#9c8fc0;
+  }
+  @media (max-width: 760px){ .footer-grid{ grid-template-columns:1fr; } }
+
+  /* ================= WHATSAPP FLOAT ================= */
+  .wa-float{
+    position:fixed; right:22px; bottom:22px; z-index:200;
+    width:60px; height:60px; border-radius:50%;
+    background:var(--whatsapp);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 14px 30px -8px rgba(37,211,102,.7);
+    animation: float-pulse 2.6s ease-in-out infinite;
+  }
+  .wa-float svg{ width:28px; height:28px; fill:white; }
+  @keyframes float-pulse{
+    0%,100%{ transform:scale(1); }
+    50%{ transform:scale(1.07); }
+  }
+
+  /* ================= RESPONSIVE HERO/SOBRE ================= */
+  @media (max-width: 900px){
+    .hero-grid, .sobre-grid{ grid-template-columns:1fr; }
+    .sobre-species{ order:-1; }
+  }
+
+  /* mobile menu */
+  .mobile-menu{
+    display:none;
+    position:fixed; inset:0; z-index:150;
+    background:var(--purple-900);
+    padding:90px 32px 32px;
+    flex-direction:column;
+    gap:1.8rem;
+  }
+  .mobile-menu.open{ display:flex; }
+  .mobile-menu a{ font-family:'Baloo 2'; font-size:1.6rem; color:var(--cream); font-weight:700; }
+  .mobile-menu .close-btn{
+    position:absolute; top:24px; right:24px;
+    width:44px; height:44px; border-radius:50%;
+    background:rgba(255,255,255,.1);
+    border:none; display:flex; align-items:center; justify-content:center;
+  }
+  .mobile-menu .close-btn svg{ width:20px; height:20px; fill:var(--cream); }
+</style>
+</head>
+<body>
+
+<svg style="position:absolute; width:0; height:0; overflow:hidden;" aria-hidden="true">
+  <defs>
+    <symbol id="ic-paw" viewBox="0 0 24 24" fill="currentColor">
+      <ellipse cx="12" cy="15.5" rx="5" ry="4.2"/>
+      <ellipse cx="5.5" cy="9.2" rx="2.1" ry="2.6" transform="rotate(-20 5.5 9.2)"/>
+      <ellipse cx="9.8" cy="5.6" rx="2" ry="2.5" transform="rotate(-8 9.8 5.6)"/>
+      <ellipse cx="14.2" cy="5.6" rx="2" ry="2.5" transform="rotate(8 14.2 5.6)"/>
+      <ellipse cx="18.5" cy="9.2" rx="2.1" ry="2.6" transform="rotate(20 18.5 9.2)"/>
+    </symbol>
+    <symbol id="ic-cat" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M6 8 L8.7 2.6 L10.2 8Z"/>
+      <path d="M18 8 L15.3 2.6 L13.8 8Z"/>
+      <circle cx="12" cy="13" r="7.3"/>
+      <circle cx="9" cy="12" r="1.05" fill="#fff"/>
+      <circle cx="15" cy="12" r="1.05" fill="#fff"/>
+      <path d="M12 14.4l-1.1 1.1h2.2z" fill="#fff"/>
+    </symbol>
+    <symbol id="ic-dog" viewBox="0 0 24 24" fill="currentColor">
+      <ellipse cx="6.3" cy="10.5" rx="3.1" ry="5.2" transform="rotate(-18 6.3 10.5)"/>
+      <ellipse cx="17.7" cy="10.5" rx="3.1" ry="5.2" transform="rotate(18 17.7 10.5)"/>
+      <circle cx="12" cy="13.5" r="7.3"/>
+      <circle cx="9.4" cy="12.6" r="1.05" fill="#fff"/>
+      <circle cx="14.6" cy="12.6" r="1.05" fill="#fff"/>
+      <ellipse cx="12" cy="16.4" rx="1.6" ry="1.15" fill="#fff"/>
+    </symbol>
+    <symbol id="ic-bird" viewBox="0 0 24 24" fill="currentColor">
+      <ellipse cx="11" cy="14" rx="7.3" ry="5.6"/>
+      <circle cx="17" cy="9" r="3.6"/>
+      <path d="M20.2 8.6 L23.4 9.6 L20.2 10.7Z"/>
+      <path d="M5.5 13.5 Q1.5 12 2.3 17.5 Q6 16.5 8 14.3Z" opacity=".85"/>
+      <circle cx="18.3" cy="8.1" r=".8" fill="#fff"/>
+    </symbol>
+    <symbol id="ic-rabbit" viewBox="0 0 24 24" fill="currentColor">
+      <ellipse cx="8.7" cy="5.6" rx="2" ry="5.6" transform="rotate(-10 8.7 5.6)"/>
+      <ellipse cx="15.3" cy="5.6" rx="2" ry="5.6" transform="rotate(10 15.3 5.6)"/>
+      <circle cx="12" cy="15.2" r="7.1"/>
+      <circle cx="9.4" cy="14.2" r="1.05" fill="#fff"/>
+      <circle cx="14.6" cy="14.2" r="1.05" fill="#fff"/>
+      <ellipse cx="12" cy="16.9" rx="1.3" ry=".95" fill="#fff"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ NAV ============ -->
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="paw-badge">
+        <svg><use href="#ic-paw"/></svg>
+      </span>
+      <span class="brand-text">Miados e Latidos</span>
+    </a>
+    <nav class="links">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#loja">Nossa loja</a>
+      <a href="#local">Localização</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/553135657566?text=Ol%C3%A1%2C%20Miados%20e%20Latidos!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm5.6 14.2c-.2.6-1.3 1.2-1.8 1.3-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.5-3.9-4.6-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.2.3-.3.5-.2.2-.3.3-.5.5-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.2.7-.1.3.1 1.8.9 2.1 1 .3.2.5.2.6.4.1.1.1.7-.1 1.3z"/></svg>
+      <span class="long">WhatsApp</span>
+    </a>
+    <button class="burger" aria-label="Abrir menu" id="burgerBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#241A3D" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-btn" id="closeMenuBtn" aria-label="Fechar menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <a href="#sobre">Sobre</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#loja">Nossa loja</a>
+  <a href="#local">Localização</a>
+  <a href="https://wa.me/553135657566" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+</div>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="hero-brand-lockup">
+          <span class="badge-icon"><svg><use href="#ic-paw"/></svg></span>
+          <span>Miados e Latidos</span>
+        </div>
+        <span class="eyebrow">Pet shop completo · São João Batista, BH</span>
+        <h1>Cuidado de verdade para quem só sabe <span class="hl">miar</span> e <span class="hl">latir</span>.</h1>
+        <p class="lead">Cirurgia, ração, utilidades e banho e tosa em um só lugar. Sua família de quatro patas merece um pet shop que trata cada visita com a mesma atenção de casa.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="https://wa.me/553135657566?text=Ol%C3%A1%2C%20Miados%20e%20Latidos!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm5.6 14.2c-.2.6-1.3 1.2-1.8 1.3-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.5-3.9-4.6-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.2.3-.3.5-.2.2-.3.3-.5.5-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.2.7-.1.3.1 1.8.9 2.1 1 .3.2.5.2.6.4.1.1.1.7-.1 1.3z"/></svg>
+            Agendar pelo WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+        </div>
+        <p class="hero-tagline">💜 "A casa do seu pet" — é assim que a gente cuida de cada visita.</p>
+
+        <div class="trust-strip">
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2l2.5 5.5L20 8l-4 4.2L17 18l-5-2.8L7 18l1-5.8L4 8l5.5-.5z"/></svg>
+            Equipe veterinária dedicada
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.5-9.3C1 8 3 4.5 6.5 4.5c2 0 3.4 1.1 4 2.1.6-1 2-2.1 4-2.1C18 4.5 20 8 20 11.7 20 16.4 12 21 12 21z"/></svg>
+            Atendimento com carinho
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2l7 4v6c0 5-3.4 8.4-7 10-3.6-1.6-7-5-7-10V6z"/></svg>
+            Ambiente seguro e higienizado
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="critter-scatter" aria-hidden="true">
+          <svg style="width:70px; top:6%; left:8%; transform:rotate(-18deg);"><use href="#ic-paw"/></svg>
+          <svg style="width:46px; top:14%; right:10%; transform:rotate(12deg);"><use href="#ic-bird"/></svg>
+          <svg style="width:54px; bottom:10%; left:6%; transform:rotate(10deg);"><use href="#ic-rabbit"/></svg>
+          <svg style="width:60px; bottom:20%; right:6%; transform:rotate(-8deg);"><use href="#ic-paw"/></svg>
+        </div>
+        <div class="critter-main">
+          <div class="critter-tile t-dog"><svg><use href="#ic-dog"/></svg><span>Cães</span></div>
+          <div class="critter-tile t-cat"><svg><use href="#ic-cat"/></svg><span>Gatos</span></div>
+          <div class="critter-tile t-bird"><svg><use href="#ic-bird"/></svg><span>Aves</span></div>
+          <div class="critter-tile t-rabbit"><svg><use href="#ic-rabbit"/></svg><span>Coelhos</span></div>
+        </div>
+        <div class="tag-float"><span class="dot"></span> Rua Cyrene Crivellari Bellônia, 50 — São João Batista</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE ============ -->
+  <section class="sobre" id="sobre">
+    <div class="wrap sobre-grid">
+      <div class="sobre-species">
+        <div class="species-tile sp-dog"><svg><use href="#ic-dog"/></svg><span>Cães</span></div>
+        <div class="species-tile sp-cat"><svg><use href="#ic-cat"/></svg><span>Gatos</span></div>
+        <div class="species-tile sp-bird"><svg><use href="#ic-bird"/></svg><span>Aves</span></div>
+        <div class="species-tile sp-rabbit"><svg><use href="#ic-rabbit"/></svg><span>Coelhos</span></div>
+      </div>
+      <div class="sobre-text">
+        <span class="eyebrow">Quem cuida</span>
+        <h2>Um pet shop de bairro, com estrutura de clínica.</h2>
+        <p>O Miados e Latidos nasceu para resolver o dia a dia de quem tem bicho de estimação: um lugar só, perto de casa, para tratar da saúde, encher a despensa de ração, achar aquele brinquedo certo e sair pro banho de tosa novinho.</p>
+        <p>Nossa equipe acompanha cada pet como se fosse do jardim ao lado — com atenção, paciência e o respeito que qualquer miado ou latido merece.</p>
+        <div class="sobre-stats">
+          <div class="stat"><strong>4</strong><span>áreas de cuidado</span></div>
+          <div class="stat"><strong>100%</strong><span>foco no bem-estar pet</span></div>
+          <div class="stat"><strong>BH</strong><span>São João Batista</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVIÇOS ============ -->
+  <section class="servicos" id="servicos">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">O que fazemos</span>
+        <h2>Quatro cuidados, uma só casa</h2>
+        <p>Da cirurgia ao laço na tosa: tudo o que seu pet precisa, sem sair do bairro.</p>
+      </div>
+
+      <div class="servicos-grid">
+        <div class="service-card c1">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M9 2l6 6-1.4 1.4L12 7.8V15a5 5 0 01-10 0h2a3 3 0 006 0V7.8L8.4 9.4 7 8z"/><circle cx="18" cy="18" r="4"/></svg>
+          </div>
+          <h3>Cirurgia</h3>
+          <p>Procedimentos cirúrgicos com equipe veterinária qualificada, do pré ao pós-operatório, com todo o acompanhamento que seu pet precisa.</p>
+        </div>
+
+        <div class="service-card c2">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M7 3h10l2 6-2 12H7L5 9z"/><path d="M8 3v6h8V3"/></svg>
+          </div>
+          <h3>Ração</h3>
+          <p>Linhas premium e terapêuticas para cães e gatos de todas as idades, com orientação para escolher a certa.</p>
+        </div>
+
+        <div class="service-card c3">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 8h16v11a1 1 0 01-1 1H5a1 1 0 01-1-1z"/><path d="M8 8V6a4 4 0 018 0v2"/></svg>
+          </div>
+          <h3>Utilidades</h3>
+          <p>Camas, coleiras, casinhas, brinquedos e todo acessório para o dia a dia do seu companheiro.</p>
+        </div>
+
+        <div class="service-card c4">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="6.5" cy="17.5" r="2.5"/><path d="M20 5L8.5 16.5M8.5 7.5L14 13M20 19L15 14"/></svg>
+          </div>
+          <h3>Banho e Tosa</h3>
+          <p>Banho, tosa higiênica ou na tesoura, hidratação e corte de unhas — pet limpo, cheiroso e feliz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NOSSA LOJA ============ -->
+  <section class="loja" id="loja">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Por dentro da casa do seu pet</span>
+        <h2>Conheça nossa loja</h2>
+        <p>Um espaço amplo, organizado e pensado pra você achar tudo rapidinho — da ração ao brinquedo certo.</p>
+      </div>
+      <div class="loja-gallery">
+        <figure class="loja-photo big">
+          <img src="assets/loja-entrada.jpg" alt="Entrada e fachada da loja Miados e Latidos">
+        </figure>
+        <figure class="loja-photo">
+          <img src="assets/loja-corredor.jpg" alt="Corredor interno da loja com prateleiras de ração e acessórios">
+        </figure>
+        <figure class="loja-photo">
+          <img src="assets/loja-produtos.jpg" alt="Prateleiras com camas, casinhas e produtos para pets">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERIA DE CLIENTES ============ -->
+  <section class="clientes" id="clientes">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">Saíram daqui novinhos</span>
+        <h2>Quem já passou pelo banho e tosa</h2>
+        <p>Um cantinho pra exibir o resultado — e o carinho — de cada visita.</p>
+      </div>
+      <div class="clientes-gallery">
+        <figure class="cliente-photo"><img src="assets/cliente-1.jpg" alt="Cliente peludo do Miados e Latidos, pronto e arrumado"></figure>
+        <figure class="cliente-photo"><img src="assets/cliente-2.jpg" alt="Cliente peludo do Miados e Latidos, pronto e arrumado"></figure>
+        <figure class="cliente-photo"><img src="assets/cliente-3.jpg" alt="Cliente peludo do Miados e Latidos, pronto e arrumado"></figure>
+        <figure class="cliente-photo"><img src="assets/cliente-4.jpg" alt="Cliente peludo do Miados e Latidos, pronto e arrumado"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DIFERENCIAIS ============ -->
+  <section class="diferenciais" id="diferenciais">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Por que o Miados e Latidos</span>
+        <h2>Cuidado que se nota na primeira visita</h2>
+      </div>
+      <div class="dif-grid">
+        <div class="dif-card">
+          <div class="dif-num"><svg><use href="#ic-dog"/></svg></div>
+          <div>
+            <h3>Equipe veterinária</h3>
+            <p>Profissionais capacitados acompanham cada procedimento, da consulta à cirurgia.</p>
+          </div>
+        </div>
+        <div class="dif-card">
+          <div class="dif-num"><svg><use href="#ic-paw"/></svg></div>
+          <div>
+            <h3>Tudo em um só lugar</h3>
+            <p>Saúde, alimentação, acessórios e estética — sem precisar rodar a cidade.</p>
+          </div>
+        </div>
+        <div class="dif-card">
+          <div class="dif-num"><svg><use href="#ic-cat"/></svg></div>
+          <div>
+            <h3>Trato de perto</h3>
+            <p>Atendimento próximo, no ritmo do seu pet, com quem conhece cada cliente pelo nome.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FAIXA ============ -->
+  <section class="cta-strip">
+    <div class="wrap cta-inner">
+      <div>
+        <h2>Bora marcar o próximo cuidado?</h2>
+        <p>Fale agora pelo WhatsApp e resolva rapidinho.</p>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/553135657566?text=Ol%C3%A1%2C%20Miados%20e%20Latidos!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm5.6 14.2c-.2.6-1.3 1.2-1.8 1.3-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.5-3.9-4.6-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.2.3-.3.5-.2.2-.3.3-.5.5-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.2.7-.1.3.1 1.8.9 2.1 1 .3.2.5.2.6.4.1.1.1.7-.1 1.3z"/></svg>
+        Chamar no WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ LOCALIZAÇÃO ============ -->
+  <section class="local" id="local">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Onde estamos</span>
+        <h2>Nos visite em São João Batista</h2>
+      </div>
+      <div class="local-grid">
+        <div class="local-card">
+          <div class="info-row">
+            <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg></div>
+            <div>
+              <h4>Endereço</h4>
+              <p>Rua Cyrene Crivellari Bellônia, 50 — São João Batista, Belo Horizonte - MG, 31515-320</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"/></svg></div>
+            <div>
+              <h4>Telefone / WhatsApp</h4>
+              <a href="tel:+553135657566">(31) 3565-7566</a>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="ic"><svg viewBox="0 0 24 24"><path d="M7 2h10a2 2 0 012 2v16a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2zm5 3a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.8-.6a.9.9 0 100 1.8.9.9 0 000-1.8z"/></svg></div>
+            <div>
+              <h4>Instagram</h4>
+              <a href="https://instagram.com/miadoselatidosbh" target="_blank" rel="noopener">@miadoselatidosbh</a>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.6l4 2.4-.8 1.3-4.7-2.8V6h1.5z"/></svg></div>
+            <div style="width:100%;">
+              <h4>Horário de funcionamento</h4>
+              <ul class="hours-list">
+                <li><span>Segunda-feira</span><span>08:00–18:00</span></li>
+                <li><span>Terça-feira</span><span>08:00–18:00</span></li>
+                <li><span>Quarta-feira</span><span>08:00–18:00</span></li>
+                <li><span>Quinta-feira</span><span>08:00–18:00</span></li>
+                <li><span>Sexta-feira</span><span>08:00–18:00</span></li>
+                <li><span>Sábado</span><span>08:00–16:00</span></li>
+                <li class="closed"><span>Domingo</span><span>Fechado</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps?q=Rua+Cyrene+Crivellari+Bell%C3%B4nia,+50+-+S%C3%A3o+Jo%C3%A3o+Batista,+Belo+Horizonte+-+MG,+31515-320&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa - Miados e Latidos"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="paw-badge">
+            <svg><use href="#ic-paw"/></svg>
+          </span>
+          <span class="brand-text">Miados e Latidos</span>
+        </div>
+        <p>Pet shop completo em Belo Horizonte: cirurgia, ração, utilidades e banho e tosa, tudo com carinho de vizinho.</p>
+        <div class="footer-critters" aria-hidden="true">
+          <svg><use href="#ic-dog"/></svg>
+          <svg><use href="#ic-cat"/></svg>
+          <svg><use href="#ic-bird"/></svg>
+          <svg><use href="#ic-rabbit"/></svg>
+        </div>
+      </div>
+      <div>
+        <h5>Navegue</h5>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#local">Localização</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Fale com a gente</h5>
+        <ul>
+          <li><a href="tel:+553135657566"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"/></svg> (31) 3565-7566</a></li>
+          <li><a href="https://wa.me/553135657566" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg> WhatsApp</a></li>
+          <li><a href="https://instagram.com/miadoselatidosbh" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M7 2h10a2 2 0 012 2v16a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2z"/></svg> @miadoselatidosbh</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Miados e Latidos. Todos os direitos reservados.</span>
+      <span>Rua Cyrene Crivellari Bellônia, 50 — São João Batista, BH</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLUTUANTE ============ -->
+<a class="wa-float" href="https://wa.me/553135657566?text=Ol%C3%A1%2C%20Miados%20e%20Latidos!" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm5.6 14.2c-.2.6-1.3 1.2-1.8 1.3-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.5-3.9-4.6-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.2.3-.3.5-.2.2-.3.3-.5.5-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.2.7-.1.3.1 1.8.9 2.1 1 .3.2.5.2.6.4.1.1.1.7-.1 1.3z"/></svg>
+</a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const burger = document.getElementById('burgerBtn');
+  const closeBtn = document.getElementById('closeMenuBtn');
+  const menu = document.getElementById('mobileMenu');
+  burger?.addEventListener('click', () => menu.classList.add('open'));
+  closeBtn?.addEventListener('click', () => menu.classList.remove('open'));
+  menu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+</script>
+
+</body>
+</html>
